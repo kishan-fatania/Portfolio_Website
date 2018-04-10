@@ -1,50 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the content */
+        .content {
+            background-color: #ddd;
+            padding: 10px;
+            height: auto; /* Should be removed. Only for demonstration */
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        table#t02 {
+            width: 100%;
+            background-color: #ddd;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
 
-<h1>
-    About me
-</h1>
+<div class="topnav">
+    <ul>
+        <li><a id="home" href="home.html">Home</a></li>
+        <li><a id="about" href="about.html">About</a></li>
+        <li><a id="project" href="project.html">Project List</a></li>
+    </ul>
+</div>
 
-<p> A young and driven individual looking to forge a career in the exciting world of technology. Following an extenisve
-    twelve week training program at QA academy, I am now ready to apply and continuously develop the skills I have
-    acquired.
-</p>
+<div class="content">
+    <h2>A little bit about myself...</h2>
+    <p>A young and driven individual looking to forge a career in the exciting world of technology. Following an extenisve
+        twelve week training program at QA academy, I am now ready to apply and continuously develop the skills I have
+        acquired.</p>
 
-<h4>
-    Personal info
-</h4>
+    <h4>
+        Personal info
+    </h4>
 
-<p id="dob">
-    Name: Kishan Fatania</br>
-    DOB: 11/07/1995
-</p>
+    <p>Name: Kishan Fatania</br>
+        DOB: 11/07/1995
+    </p>
 
-<h4>
-    Education
-</h4>
+    <h4>
+        Education
+    </h4>
 
-<p>
-    QA Academy: Training programme
-    University of Nottingham: BSc hons Neuroscience - 2:1</br>
-    WQEIC: A-Levels: Biology A, Chemistry A, Maths B, Physics (AS) B</br>
-</p>
+    <p>QA Academy: Training programme</br>
+        University of Nottingham: BSc hons Neuroscience - 2:1</br>
+        WQEIC: A-Levels: Biology A, Chemistry A, Maths B, Physics (AS) B</br>
+    </p>
 
-<h4>
-    Skills
-</h4>
-<p>
-    Java SE</br>
-    Databases</br>
-    DevOps</br>
-    HTML</br>
-</p>
+    <div class="table">
+        <h4>Skills</h4>
 
+        <table id="t02">
+            <tr>
+                <th>Language</th>
+                <th>Date learned</th>
+                <th>Last used</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>QA Week 1</td>
+                <td>Today</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>QA Week 3</td>
+                <td>QA Week 3</td>
+            </tr>
+            <tr>
+                <td>Linux</td>
+                <td>QA Week 4</td>
+                <td>QA Week 4</td>
+            </tr>
+        </table>
+</div>
+
+<div class="footer">
+    <p>© Kishan Fatania</p>
+</div>
 
 </body>
 </html>

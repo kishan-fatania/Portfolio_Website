@@ -1,32 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the content */
+        .content {
+            background-color: #ddd;
+            padding: 10px;
+            height: auto; /* Should be removed. Only for demonstration */
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        table#t01 {
+            width: 100%;
+            background-color: #ddd;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-<h1>Project list</h1>
 
-<p> Please find below a list of the projects I have been working on recently across a range of technologies.
-</p>
+<div class="topnav">
+    <ul>
+        <li><a id="home" href="home.html">Home</a></li>
+        <li><a id="about" href="about.html">About</a></li>
+        <li><a id="project" href="project.html">Project List</a></li>
+    </ul>
+</div>
 
-<h4>Java</h4>
-<p>Example 1</br>
-    Example 2</br>
-    Example 3</br></p>
-<h4>Databases</h4>
-<p>Project 1</br>
-    Project 2</br>
-    Project 3</br></p>
-<h4>DevOps</h4>
-<p>Beta 1</br>
-    Beta 2</br>
-    Beta 3</br></p>
-<h4>HTML</h4>
-<p>GM 1</br>
-    GM 2</br>
-    GM 3</br></p>
+<div class="content">
+    <h2>Project list</h2>
+    <p> Please find below a list of the projects I have been working on recently across a range of technologies.
+    </p>
+</div>
+
+<div class="table">
+    <h4>My Projects</h4>
+
+    <table id="t01">
+        <tr>
+            <th>Technology</th>
+            <th>Project Name</th>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Garage</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Library</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Battleships</td>
+        </tr>
+        <tr>
+            <td>Oracle SQL</td>
+            <td>Employee</td>
+        </tr>
+        <tr>
+            <td>Oracle SQL</td>
+            <td>Tesco</td>
+        </tr>
+        <tr>
+            <td>Vagrant</td>
+            <td>VM creation</td>
+        </tr>
+        <tr>
+            <td>AWS</td>
+            <td>VM creation</td>
+        </tr>
+        <tr>
+            <td>Linux</td>
+            <td>Scripting</td>
+        </tr>
+    </table>
+
+
+</div>
+
+<div class="footer">
+    <p>© Kishan Fatania</p>
+</div>
 
 </body>
 </html>

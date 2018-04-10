@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>home</title>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the content */
+        .content {
+            background-color: #ddd;
+            padding: 10px;
+            height: auto; /* Should be removed. Only for demonstration */
+        }
+
+        /* Style the footer */
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
 
-<ul id="nav">
-    <li><a id="home" href="home.html">Home</a></li>
-    <li><a id="about" href="about.html">About</a></li>
-    <li><a id="project" href="project.html">Project List</a></li>
-</ul>
-
-<img src="images/avatar.png" width="75px" height="75px" border="3px solid #FFFFFFFF">
-
-<div id="welcome">
-    <h1> Hi my name is Kishan, welcome to my web portfolio!</h1>
+<div class="topnav">
+    <ul>
+        <li><a id="home" href="home.html">Home</a></li>
+        <li><a id="about" href="about.html">About</a></li>
+        <li><a id="project" href="project.html">Project List</a></li>
+    </ul>
 </div>
 
-<p id="intro">As a graduate from the University of Nottingham with a degree in Neuroscience, why am I training as an IT
-    consultant
-    I hear you say?<br/><br/>
 
-    Well my degree allowed me to experiment with programming and from the moment I wrote my first working script, I
-    haven't looked back!<br/><br/>
+<a id="aboutpic" href="about.html"><img src="images/avatar.png" width="75px" height="75px"></a>
 
-    Which brings us here, to my web portfolio, where I hope to share with you some of the cool projects I've been busy
-    working on recently.<br/><br/>
-</p>
 
+<div class="content">
+    <h2>Hi my name is Kishan, welcome to my web portfolio!</h2>
+    <p>As a graduate from the University of Nottingham with a degree in Neuroscience, why am I training as an IT
+        consultant I hear you say? ...Well my degree allowed me to experiment with programming and from the moment I wrote my first working script, I
+        haven't looked back!</p>
+  Which brings us here, to my web portfolio, where I hope to share with you some of the cool projects I've been busy
+        working on recently alongside some of my other hobbies which include:</br></br>
+    - Watching and playing football</br>
+    - Working on and modifying vehciles</br>
+    - Exploring new places</br>
+    </p>
+</div>
+
+<div class="footer">
+    <p>© Kishan Fatania</p>
+</div>
 
 </body>
 </html>
